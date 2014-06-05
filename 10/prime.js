@@ -10,7 +10,7 @@ var prime = factorial(n){
 }
 */
 
-var prime function(n) {
+var prime = function(n) {
     if (n%2 == 0) return n == 2;
     if (n%3 == 0) return n == 3;
     var limit = Math.sqrt(n);
