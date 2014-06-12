@@ -18,21 +18,20 @@ var factorial = function(n){
 }
 
 
-	/*
- else if(n<=0){
-		return null;
-	} else {
-		return null;
+//問９の回答例
+
+var calcFactorial = function(n){
+	if(n > 1){
+		return 1
+	}else{
+		return n * calcFactorial(n-1);
 	}
-*/
+};
 
-
-/*
-function fact(n) {
-  if (n === 0) {
-    return 1;
-  } else {
-    return n * fact(n - 1);
-  }
-}
-*/
+var factorial(n){
+	n = Number(n);
+	if(number.isNaN(n)&& n > 0){
+		return calcFactorial(Math.floor(n));
+	} 
+	return null;
+};
