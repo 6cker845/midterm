@@ -19,3 +19,27 @@ var prime = function(n) {
     }
     return true;
 }
+
+
+//問10の回答例
+
+var isPrimeNumberCandidate = function(n){
+	return Number.isInteger(n) && n > 1;
+};
+var findDivisorOf = function(n, upperBound){
+	var i = 2;
+	while(i < upperBound){
+		if(n % i == 0){
+			return i;
+		}
+		i = i + 1;
+	}
+	return null;
+}
+
+var prime = function(n){
+	return isPrimeNumberCandidate(n) && findDivisorOf(n, n/2 + 1) == null;
+};
+
+
+
